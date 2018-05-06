@@ -1,43 +1,36 @@
-import React from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-360';
+import React, { Component } from "react";
+import { AppRegistry, StyleSheet, Text, View } from "react-360";
+import styled from "styled-components";
 
-export default class respondvr_ui extends React.Component {
+const Panel = styled(View)`
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  align-items: center;
+`;
+
+const GreetingBox = styled(View)`
+  padding: 20px;
+  background-color: #000000;
+  border-color: #639dda;
+  border-width: 2px;
+`;
+
+const Greetings = styled(Text)`
+  font-size: 30px;
+`;
+
+export default class respondvr_ui extends Component {
   render() {
     return (
-      <View style={styles.panel}>
-        <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Welcome to React 360
-          </Text>
-        </View>
-      </View>
+      <Panel>
+        <GreetingBox>
+          <Greetings>uPortal VR</Greetings>
+        </GreetingBox>
+      </Panel>
     );
   }
-};
+}
 
-const styles = StyleSheet.create({
-  panel: {
-    // Fill the entire surface
-    width: 1000,
-    height: 600,
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  greetingBox: {
-    padding: 20,
-    backgroundColor: '#000000',
-    borderColor: '#639dda',
-    borderWidth: 2,
-  },
-  greeting: {
-    fontSize: 30,
-  },
-});
-
-AppRegistry.registerComponent('respondvr_ui', () => respondvr_ui);
+AppRegistry.registerComponent("respondvr_ui", () => respondvr_ui);
