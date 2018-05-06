@@ -30,5 +30,16 @@
   },
   "jest": {
     "preset": "react-360"
+  },
+  "renovate": {
+    "extends": [
+      "schedule:weekly",
+      "group:all",
+      ":rebaseStalePrs",
+      ":preserveSemverRanges",
+      ":semanticPrefixChore",
+      ":ignoreUnstable",
+      ":renovatePrefix"
+    ]
   }
 }
