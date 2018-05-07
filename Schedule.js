@@ -27,7 +27,7 @@ export default class Schedule extends Component {
     return (
       <Panel>
         <GreetingBox>
-          <Greetings>uPortal VR 3</Greetings>
+          <Greetings>Schedule</Greetings>
         </GreetingBox>
       </Panel>
     );

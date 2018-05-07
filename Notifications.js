@@ -27,7 +27,7 @@ export default class Notifications extends Component {
     return (
       <Panel>
         <GreetingBox>
-          <Greetings>uPortal VR 2</Greetings>
+          <Greetings>Notifications</Greetings>
         </GreetingBox>
       </Panel>
     );
