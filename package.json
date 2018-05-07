@@ -8,7 +8,6 @@
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
-    "test": "jest",
     "gh-pages":
       "git branch -D gh-pages && git checkout -b gh-pages && rm .gitignore && yarn && yarn bundle && rm -rf node_modules && cp -r static_assets build/static_assets && git add --all && git commit --no-verify -m 'chore: gh-pages' && git push origin gh-pages -f && git checkout master && yarn"
   },
@@ -21,9 +20,7 @@
     "three": "^0.87.0"
   },
   "devDependencies": {
-    "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
-    "jest": "^19.0.2",
     "react-devtools": "^2.5.2",
     "react-test-renderer": "16.0.0",
     "xopen": "1.0.0"
