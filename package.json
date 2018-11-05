@@ -15,7 +15,7 @@
     "react-360-web": "~1.0.0",
     "react-native": "~0.57.0",
     "styled-components": "^4.0.0",
-    "three": "^0.97.0"
+    "three": "^0.98.0"
   },
   "devDependencies": {
     "babel-preset-react-native": "^4.0.0",
