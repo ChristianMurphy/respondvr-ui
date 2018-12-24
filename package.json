@@ -10,7 +10,7 @@
     "gh-pages": "git branch -D gh-pages && git checkout -b gh-pages && rm .gitignore && yarn && yarn bundle && rm -rf node_modules && cp -r static_assets build/static_assets && git add --all && git commit --no-verify -m 'chore: gh-pages' && git push origin gh-pages -f && git checkout master && yarn"
   },
   "dependencies": {
-    "react": "16.6.3",
+    "react": "16.7.0",
     "react-360": "~1.0.0",
     "react-360-web": "~1.0.0",
     "react-native": "~0.57.0",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "babel-preset-react-native": "^4.0.0",
     "react-devtools": "^3.0.0",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "16.7.0",
     "xopen": "1.0.0"
   },
   "jest": {
