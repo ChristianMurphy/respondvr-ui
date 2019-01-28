@@ -13,7 +13,7 @@
     "react": "16.7.0",
     "react-360": "~1.0.0",
     "react-360-web": "~1.0.0",
-    "react-native": "~0.57.0",
+    "react-native": "~0.58.0",
     "styled-components": "^4.0.0",
     "three": "^0.100.0"
   },
